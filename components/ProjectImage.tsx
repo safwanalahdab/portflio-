@@ -16,6 +16,7 @@ export function ProjectImage({
   className?: string;
 }) {
   const [failed, setFailed] = useState(false);
+  const imageSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${src}`;
 
   if (failed) {
     return <VisualPlaceholder dark label={alt} className={className} />;
@@ -24,7 +25,7 @@ export function ProjectImage({
   return (
     <div className={`relative overflow-hidden bg-white ${className}`}>
       <Image
-        src={src}
+        src={imageSrc}
         alt={alt}
         fill
         priority={priority}

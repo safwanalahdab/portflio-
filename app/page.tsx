@@ -28,7 +28,7 @@ export default function Home() {
           <div className="relative lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
               <Image
-                src="/manar-kabbara.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/manar-kabbara.jpg`}
                 alt="Manar Kabbara"
                 fill
                 priority
