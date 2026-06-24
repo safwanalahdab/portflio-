@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-ink/15; }
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  ::selection { @apply bg-gold text-white; }
+}
+
+@layer utilities {
+  .container-page { @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-14 xl:px-20; }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.25em] text-gold; }
+  .display { @apply font-serif font-medium leading-[0.88] tracking-[-0.04em]; }
+}
+
+.blueprint {
+  background-color: #2c3332;
+  background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.warm-grid {
+  background-color: #d9d2c5;
+  background-image: linear-gradient(rgba(32,32,30,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(32,32,30,.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
