@@ -23,7 +23,7 @@ export function ProjectImage({
   }
 
   return (
-    <div className={`relative overflow-hidden bg-white ${className}`}>
+    <div className={`soft-card relative overflow-hidden bg-white ring-1 ring-ink/5 ${className}`}>
       <Image
         src={imageSrc}
         alt={alt}
